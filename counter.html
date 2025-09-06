@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .all{
+            background-color: #fff;
+            width: 40%;
+            height: 400px;
+            margin-top: 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 80px;
+        }
+        .all h2{
+            font-size: 40px;
+            color: rgb(2, 2, 110);
+        }
+        .screen{
+            background-color: rgb(226, 226, 241);
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            padding: 24px
+        }
+        .buttons{
+            display: flex;
+            gap: 14px;
+        }
+        .buttons button{
+            height: 40px;
+            width: 60px;
+            border-radius: 5px;
+            font-size: 27px;
+            background-color: rgb(109, 109, 219);
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <h2>Counter</h2>
+        <h1 class="screen"></h1>
+        <div class="buttons">
+            <button id="minus">-</button>
+            <button id="reset">↻</button>
+            <button id="plus">+</button>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+
+</html>

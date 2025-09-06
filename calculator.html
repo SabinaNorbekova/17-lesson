@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: midnightblue;
+        }
+        .all{
+            background-color: rgb(203, 203, 237);
+            margin: 0 auto;
+            height: 600px;
+            width: 60%;
+            padding: 60px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .inputs label{
+            height: 20px;
+            width: 200px;
+        }
+        .inputs input{
+            height: 40px;
+            border-radius: 8px;
+            border-color: rgb(239, 239, 239);
+            border-style: none;
+        }
+        .inputs select{
+            height: 40px;
+            border-radius: 8px;
+            font-size: 21px;
+        }
+        .all button{
+            height: 40px;
+            background-color: rgb(123, 123, 199);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 21px;
+        }
+        #result{
+            height: 50px;
+            background-color: rgb(30, 10, 49);
+        }
+        .all h1{
+            font-size: 30px;
+            padding: 8px;
+            border-radius: 8px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <h1 id="result">Result:</h1>
+        <form action="" class="inputs">
+            <label for="">Number 1</label>
+            <input type="number" id="num1" required>
+            <label for="">Number 2</label>
+            <input type="number" id="num2" required>
+            <label for="operator">Operator</label>
+            <select name="" id="operator" required>
+                <option value="">Choose Operator</option>
+                <option value="add">Add</option>
+                <option value="minus">Minus</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Devide</option>
+            </select>
+        </form>
+        <button type="button" id="calcBtn">Calculate</button>
+        <button type="reset" id="resetBtn">Reset</button>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
