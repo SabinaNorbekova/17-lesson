@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitsa Buyurtma</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+
+<body>
+    <div>
+        <h1>Pitsa buyurtma qilish</h1>
+        <div>
+            <p>Noni qanday bo'lsin</p><br>
+            <select id="nonSelect">
+                <option value="">Tanlang</option>
+                <option value="Yupqa">Yupqa</option>
+                <option value="O'rtacha">O'rtacha</option>
+                <option value="Qalin">Qalin</option>
+            </select>
+        </div>
+        <div>
+            <p>Kattaligi</p>
+            <div class="kattalik">
+                <div>25sm</div>
+                <div>30sm</div>
+                <div>35sm</div>
+            </div>
+        </div>
+        <div>
+            <p>Ustiga nima solaylik?</p>
+            <div class="checkbox-group">
+                <div>
+                    <label><input type="checkbox"> Pomidor</label>
+                    <label><input type="checkbox"> Kurka go'shti</label>
+                    <label><input type="checkbox"> Zaytun</label>
+                </div>
+                <div>
+                    <label><input type="checkbox"> Tuzlangan bodring</label>
+                    <label><input type="checkbox"> Qo'ziqorin</label>
+                    <label><input type="checkbox"> Qazi</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Qo'shimchalar</p>
+            <div class="qoshimcha">
+                <label><input type="checkbox"> Achchiq</label>
+                <label><input type="checkbox"> Sosiskali</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>Non: <span id="non"></span></p>
+        <p>Kattaligi: <span id="kattalik"></span></p>
+        <p>Ustida: <span id="ustida"></span></p>
+        <p>Qo'shimcha: <span id="qoshimcha"></span></p>
+        <button id="buyurtmaBtn">Buyurtma berish</button>
+        <p id="xabar"></p>
+    </div>
+    <script src="pizza.js"></script>
+</body>
+
+</html>
